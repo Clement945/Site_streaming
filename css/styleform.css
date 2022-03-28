@@ -1,0 +1,201 @@
+/*rest css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html{  /*élément (ou sélécteur) propriété valeur */
+    font-size: 62.5%; /*1.000rem root em en 10px */
+
+}
+
+body{
+    font: 1.6rem 'Montserrat', sans-serif; /* 16px, c'est le reset */
+    margin: 0;
+    background-color: var(--color-secondary);
+
+}
+h1,h2,h3,h4,ol,ul,p{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  /*pour qu les liste à puce disparaisse */
+    font-weight: 100;
+}
+
+*{
+    box-sizing: border-box; /* il va enlever tous ce qui a en plus de padding et de bordure (de coté) */
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+    border: 0;
+    background-color: transparent;
+    font-size: inherit;  /* à la racine */
+}
+input,button{
+    border: 0;
+}
+[placeholder]{
+    font-size: initial;
+}
+:root{
+    --color-primary: #1d1d1d;
+    --color-secondary: #3a3531;
+    --color-trois: #FFFFFF;
+    --color-quatre: #3d413e;
+    --color-cinq: rgb(211, 201, 192);
+    --color-six: #21663b; 
+    --color-theme-warning: #8B0000;
+}
+
+header h1{
+    line-height: 8.5rem; 
+    text-align: center;
+    background-color: var(--color-quatre);
+    color: var(--color-trois);
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+main, footer{
+    max-width: 110rem;
+    margin: 1rem auto 3rem;
+    line-height: 3rem;
+}
+
+.warning{
+    background-color: var(--color-theme-warning);
+    text-align: center;
+    line-height: 3.5rem;
+    color: #fff;
+    font-style: 2rem;
+    display: none;   /* le fait disparaitre */
+
+}
+.show-warning{
+    display: block;
+}
+
+
+header img{
+    position: absolute;  /* centre l'image et permet de ne pas bouger l'image */
+    top: 1rem;
+    left: 1rem;
+    height : 7.3rem;
+    width : 8rem;
+    background-color: var(--color-quatre);
+    filter: grayscale(15%);
+    object-fit: cover;  /* couleur ou noir et blanc */
+  
+}
+
+main .inner-form{
+    max-width: 100rem;
+    margin: 5rem auto 5rem;
+    padding: 2rem;
+}
+
+main .inner-form fieldset legend{
+    font-size: 2rem;
+    padding : 1rem;
+    text-align: center;
+    color: var(--color-trois);
+}
+
+fieldset{
+    padding: 1rem;
+    border: solid .1rem #222;
+    border-radius: .4rem;
+}
+
+fieldset form *{
+    display: block;
+    width: 100%;
+    line-height: 3.5rem;
+    border: solid .1rem #ccc;
+    margin-bottom: .5rem;
+}
+
+
+fieldset form label, fieldset small{
+    border: 0;
+}
+
+fieldset form input[type="submit"]{
+    background-color: var(--color-six);
+    color:var(--color-trois);
+    line-height: 4.5rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+
+}
+
+.inner-form form label{
+    color: var(--color-trois);
+}
+
+fieldset form input{
+    padding: .5rem;
+}
+
+fieldset legend{
+    text-align: center;
+}
+
+footer *{
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-trois);
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+/*responsive */
+
+@media screen and (max-width:70.0rem){
+
+    main, footer {
+        margin: 0 auto;
+        max-width: 150rem;  /* adaptée pour Ipad */
+    }
+    header img{
+        display: block;
+        position: static; /* permet de ne pas bouger l'image */
+        margin:0 auto;
+    }
+
+    main section{
+        padding: 0;
+    }
+    header{
+        background-color: var(--color-quatre);
+        font-size: small;
+    }
+
+
+    main .inner-form{
+        padding: 0;
+    }
+    header{
+        font-size: small;
+    }
+
+    header h1{
+        margin: 0rem;
+        font-size: large;
+        line-height: 2.5rem;
+    }
+    main section:nth-child(2) ul img{
+        display: block;
+        width: 100%;
+    }
+    footer{
+        display: grid;
+        height: 20vh;   
+        align-items:center;  /*met au milieu le copyright */
+        background-color: var(--color-primary);
+        font-size: small;
+    }
+}
+
+
+
