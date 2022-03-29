@@ -142,6 +142,10 @@ a{
     color: var(--color-trois);
 }
 
+p{
+    text-align: center;
+}
+
 fieldset legend{
     text-align: center;
 }
@@ -183,6 +187,11 @@ footer *{
     header{
         font-size: small;
     }
+
+    p{
+        text-align: center;
+    }
+    
 
     header h1{
         margin: 0rem;
