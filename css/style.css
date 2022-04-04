@@ -273,6 +273,12 @@ footer *{
     section h2{
         font-size: large;
         }
+
+
+    a{
+        margin-top: 1.5rem;
+    }
+
     footer{
         display: grid;
         height: 20vh;   
