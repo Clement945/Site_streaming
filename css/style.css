@@ -237,6 +237,19 @@ footer *{
         font-size: small;
     }
 
+    main section:nth-child(2) ul img{
+        display: block;
+        width: 100%;
+    }
+
+    main section:nth-child(2) ul li{
+        display: inline-block;
+        width: calc(100% / 2 - 1rem);
+        margin: 0.3rem;
+        padding: 0rem;
+        border : .1rem solid var(--color-trois);
+    }
+
     section:first-child p{
         text-align: justify;
     }
