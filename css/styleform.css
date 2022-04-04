@@ -192,6 +192,10 @@ footer *{
     header{
         font-size: small;
     }
+
+    input[type="submit"]{
+        margin-top: 2rem;
+    }
     
 
     header h1{
