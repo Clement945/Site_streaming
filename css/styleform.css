@@ -182,6 +182,9 @@ footer *{
         font-size: small;
     }
 
+    h3{
+        font-size: small;
+    }
 
     main .inner-form{
         padding: 0;
