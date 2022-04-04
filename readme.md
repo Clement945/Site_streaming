@@ -24,7 +24,7 @@ Tout se retrouve ici et mise à jours chaque jours pour chaque nouveau film sur 
 * index.html
 * formulaire.html
 * css/style.css
-* css/style2.css
+* css/styleform.css
 * asset/
 * js/
 * favicon/
