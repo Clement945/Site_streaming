@@ -155,7 +155,10 @@ fieldset legend{
 section h3 a{
     border: .1rem solid #fff;
     padding: .8rem;
+}
 
+section h3{
+    margin-top: 1.8rem;
 }
 
 footer *{
